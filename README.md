@@ -1,4 +1,6 @@
-# Getting Started with Paver
+# [Component Docs](https://hrallo.github.io/paver/?path=/story/introduction--page)
+
+# Development in Paver
 
 ## Creating a Component
 
@@ -53,5 +55,3 @@ storybook and you are not running `npm run dev `
   dropdown
 - Select 'Auto-generate release notes'
 - Publish release
-
-### ``
