@@ -1,0 +1,17 @@
+@import '../../styles/global/global';
+
+.StepTracker {
+    width: 100%;
+}
+
+.row {
+    width: 60%;
+}
+
+.column {
+    width: inherit;
+}
+
+.column > * {
+    padding-bottom: $space-md;
+}

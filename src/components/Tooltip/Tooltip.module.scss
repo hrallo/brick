@@ -1,0 +1,19 @@
+@import '../../styles/global/global';
+
+.Tooltip {
+    width: fit-content;
+    min-width: 100px;
+    max-width: 300px;
+    position: absolute;
+    background: $color-monochrome-100;
+
+    &::after {
+        position: absolute;
+        content: "";
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 8px solid $color-monochrome-100;
+        left: 47%;
+        bottom: -8px;
+      }
+}

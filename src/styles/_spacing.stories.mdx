@@ -1,0 +1,72 @@
+import { Meta, Source, Story, Canvas, ArgsTable } from '@storybook/addon-docs'; 
+import { loremIpsum } from 'lorem-ipsum'
+import * as R from 'ramda'
+
+<Meta title="Styles/Spacing" />
+
+export const copy = loremIpsum({ count: 1, units: 'paragraphs' })
+
+export const Template = (args) => <div style={{ border: '1px solid #C5CE90', backgroundColor: '#C5CE90'}} {...args}>{copy}</div>;
+
+export const sizes = ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl']
+export const directions = {
+    margin: ['margin', 'margin-top', 'margin-bottom', 'margin-left', 'margin-right'],
+    padding: ['padding', 'padding-top', 'padding-bottom', 'padding-left', 'padding-right']
+}
+
+export const getClasses = (type) => {
+    const classes = R.map(direction => {
+        return R.map(size => {
+            return `${direction}-${size}`
+        }, sizes)
+    }, directions[type])
+    return R.flatten(classes)
+}
+
+# Spacing
+
+Spacing is based on 10px and grows by doubling or halfing in either direction. Spacing is available for use as scss variables, or as either margin or padding utility classes.
+<br/><br/>
+
+## Margins
+
+<Story 
+    name="Margin"
+    decorators={[
+        (Story) => (
+        <div style={{ border: '1px solid #F3CDA1', backgroundColor: '#F3CDA1'}}>
+            <Story />
+        </div>
+        ),
+    ]}
+    args={{
+      className: 'margin-sm', 
+    }}
+    argTypes={{
+        className: {
+        options: getClasses('margin'),
+        control: { type: 'select' },
+        },
+    }}>
+    {Template.bind({})}
+</Story>
+
+<ArgsTable story="Margin" />
+
+## Padding
+
+<Story 
+    name="Padding"
+    args={{
+      className: 'padding-sm', 
+    }}
+    argTypes={{
+        className: {
+        options: getClasses('padding'),
+        control: { type: 'select' },
+        },
+    }}>
+    {Template.bind({})}
+</Story>
+
+<ArgsTable story="Padding" />

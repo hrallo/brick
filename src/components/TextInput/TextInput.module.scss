@@ -1,0 +1,52 @@
+@import '../../styles/global/global';
+
+.TextInput {
+  box-sizing: border-box;
+  outline: 0;
+  width: 100%;
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
+.primary {
+  padding: 17px;
+  border-radius: 8px;
+  border: 1px solid $color-monochrome-600;
+  color: $color-monochrome-800;
+  &:focus,
+  &:focus-visible,
+  &:hover,
+  &:active {
+    border-color: $color-blue-400;
+  }
+  &:disabled {
+    color: $color-monochrome-500;
+    border-color: $color-monochrome-500;
+  }
+}
+
+.secondary {
+  padding: 7px 20px;
+  border-radius: 16px;
+  border: 1px solid $color-monochrome-500;
+  color: $color-monochrome-800;
+  &:focus,
+  &:focus-visible,
+  &:hover,
+  &:active {
+    border-color: $color-green-500;
+  }
+  &:disabled {
+    color: $color-monochrome-400;
+    border-color: $color-monochrome-400;
+  }
+}
+
+.inputWrapper {
+  width: 100%;
+}
+
+.invalid {
+  border-color: $color-red-700;
+}

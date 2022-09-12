@@ -1,0 +1,126 @@
+import { Meta, Source, Story, Canvas, ArgsTable } from '@storybook/addon-docs'
+import { loremIpsum } from 'lorem-ipsum'
+import * as R from 'ramda'
+import { color } from '../utils/shared'
+
+<Meta title='Styles/Effects' />
+
+export const directions = {
+  borders: [
+    'border',
+    'border-top',
+    'border-bottom',
+    'border-left',
+    'border-right',
+  ],
+}
+
+export const opts = {
+  shadows: [
+    'shadow-elevation-1',
+    'shadow-elevation-2',
+    'shadow-elevation-3',
+    'shadow-elevation-4',
+  ],
+  radius: [
+    'border-radius-sm',
+    'border-radius-sm',
+    'border-radius-md',
+    'border-radius-lg',
+    'border-radius-full',
+  ],
+  borders: ['border-blue-400', 'border-left-blue-400'],
+}
+
+export const copy = loremIpsum({ count: 1, units: 'paragraphs' })
+export const Template = (args) => (
+  <div {...args} style={{ width: '200px', height: '200px' }}></div>
+)
+export const TemplateBordered = (args) => (
+  <div
+    {...args}
+    style={{ border: '1px solid black', width: '200px', height: '200px' }}
+  ></div>
+)
+
+export const getClasses = (type, styles) => {
+  const classes = R.map((direction) => {
+    return R.map((style) => {
+      return `${direction}-${style}`
+    }, styles)
+  }, directions[type])
+  return R.flatten(classes)
+}
+
+# Effects
+
+Various styles that can be used to skin html without writing additional css.
+
+<br />
+<br />
+
+## Shadows
+
+We use 3 general shadows of various elevation.
+
+<Canvas withSource='open'>
+  <Story
+    name='Shadows'
+    args={{
+      className: opts.shadows[0],
+      copy: copy,
+    }}
+    argTypes={{
+      className: {
+        options: opts.shadows,
+        control: { type: 'select' },
+      },
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story='Shadows' />
+
+## Radius
+
+<Canvas withSource='open'>
+  <Story
+    name='Radius'
+    args={{
+      className: opts.radius[0],
+    }}
+    argTypes={{
+      className: {
+        options: opts.radius,
+        control: { type: 'select' },
+      },
+    }}
+  >
+    {TemplateBordered.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story='Radius' />
+
+## Borders
+
+<Canvas withSource='open'>
+  <Story
+    name='Borders'
+    args={{
+      className: opts.borders[0],
+    }}
+    argTypes={{
+      className: {
+        options: getClasses('borders', color),
+        control: { type: 'select' },
+      },
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story='Borders' />

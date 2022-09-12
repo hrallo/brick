@@ -1,0 +1,100 @@
+// aspect ratios
+$xs-width: 480px;
+$sm-width: 769px;
+$md-width: 960px;
+$lg-width: 1280px;
+
+// new colors
+$color-white: #ffffff;
+$color-black: #262524;
+
+$color-green-100: #e4f5e9;
+$color-green-200: #bfe5c8;
+$color-green-300: #95d4a6;
+$color-green-400: #67c482;
+$color-green-500: #41b768;
+$color-green-600: #00aa4e;
+$color-green-700: #009b45;
+$color-green-800: #008a39;
+$color-green-900: #00792e;
+$color-green-1000: #005a1b;
+
+$color-navy-100: #daf0ff;
+$color-navy-200: #b8d8ed;
+$color-navy-300: #98bbd4;
+$color-navy-400: #769fbc;
+$color-navy-500: #5c89a8;
+$color-navy-600: #407596;
+$color-navy-700: #336785;
+$color-navy-800: #24536f;
+$color-navy-900: #154159;
+$color-navy-1000: #002c41;
+
+$color-yellow-100: #fffde7;
+$color-yellow-200: #fff9c3;
+$color-yellow-300: #fef59b;
+$color-yellow-400: #fef172;
+$color-yellow-500: #fbec50;
+$color-yellow-600: #f9e72b;
+$color-yellow-700: #fdd82c;
+$color-yellow-800: #fbc023;
+$color-yellow-900: #faa81a;
+$color-yellow-1000: #f77e08;
+
+$color-blue-100: #dff4fb;
+$color-blue-200: #afe3f4;
+$color-blue-300: #7ad0ed;
+$color-blue-400: #43bde6;
+$color-blue-500: #00b0e3;
+$color-blue-600: #00a2e1;
+$color-blue-700: #0095d3;
+$color-blue-800: #0082c1;
+$color-blue-900: #0072ad;
+$color-blue-1000: #00528e;
+
+$color-pink-100: #fce2eb;
+$color-pink-200: #f7b7ce;
+$color-pink-300: #f388ae;
+$color-pink-400: #ee558d;
+$color-pink-500: #ea2874;
+$color-pink-600: #e5005c;
+$color-pink-700: #d50059;
+$color-pink-800: #bf0055;
+$color-pink-900: #aa0051;
+$color-pink-1000: #85004a;
+
+$color-red-100: #faeae7;
+$color-red-200: #fdcdbd;
+$color-red-300: #fcae93;
+$color-red-400: #fc8e68;
+$color-red-500: #fb7647;
+$color-red-600: #fb6027;
+$color-red-700: #f05a23;
+$color-red-800: #e2531e;
+$color-red-900: #d44c1b;
+$color-red-1000: #bb4014;
+
+$color-monochrome-100: $color-white;
+$color-monochrome-200: #fcfcfc;
+$color-monochrome-300: #f7f7fc;
+$color-monochrome-400: #eff0f7;
+$color-monochrome-500: #d9dbe9;
+$color-monochrome-600: #a0a3bd;
+$color-monochrome-700: #6e7191;
+$color-monochrome-800: #4e4b66;
+$color-monochrome-900: #262338;
+$color-monochrome-1000: #14142b;
+$color-monochrome-1100: $color-black;
+
+$font-primary: 'Inter', sans-serif;
+$font-mono: 'IBM Plex Mono', monospace;
+
+// spacing
+$space-base: 8px;
+$space-xxs: calc($space-base/4);
+$space-xs: calc($space-base/3);
+$space-sm: calc($space-base/2);
+$space-md: $space-base;
+$space-lg: calc($space-base * 2);
+$space-xl: calc($space-base * 3);
+$space-xxl: calc($space-base * 4);

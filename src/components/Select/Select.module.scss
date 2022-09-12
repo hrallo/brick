@@ -1,0 +1,64 @@
+@import '../../styles/global/global';
+
+.Select {
+  box-sizing: border-box;
+  outline: 0;
+  width: 100%;
+  appearance: none;
+}
+
+.primary {
+  border: 1px solid $color-monochrome-600;
+  padding: 16px 40px 16px 16px;
+  color: $color-monochrome-700;
+  border-radius: 8px;
+  &:focus,
+  &:focus-visible,
+  &:hover,
+  &:active {
+    border-color: $color-blue-400;
+  }
+  &:disabled {
+    color: $color-monochrome-500;
+    border-color: $color-monochrome-500;
+  }
+}
+
+.secondary {
+  padding: 7px 40px 7px 20px;
+  border-radius: 16px;
+  border: 1px solid $color-monochrome-500;
+  color: $color-monochrome-800;
+  &:focus,
+  &:focus-visible,
+  &:hover,
+  &:active {
+    border-color: $color-green-500;
+  }
+  &:disabled {
+    color: $color-monochrome-400;
+    border-color: $color-monochrome-400;
+  }
+}
+
+.icon {
+  position: absolute;
+  right: 16px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.invalid {
+  border-color: $color-red-700;
+}
+
+.componentWrapper {
+  width: 100%;
+}

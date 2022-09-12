@@ -1,0 +1,16 @@
+@import '../../styles/global/global';
+
+.StepTrackerStep {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stepIndicator {
+    display: flex;
+    width: $space-xxl;
+    height: $space-xxl;
+    justify-content: center;
+    align-items: center;
+    border-width: $space-xxs;
+}

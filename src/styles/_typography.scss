@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;500;600;700&display=swap');
+
+.body1 {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.body2 {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.heading1 {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.heading2 {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 32px;
+}
+
+.heading3 {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.subheading1 {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.subheading2 {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.subheading3 {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.link-large {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.link {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.link-small {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.button {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 12px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.caps {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.caps-small {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.code {
+  font-family: $font-mono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.pill {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8.99789px;
+  line-height: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+.text-transform-lowercase {
+  text-transform: lowercase;
+}
+
+.text-transform-capitalize {
+  text-transform: capitalize;
+}

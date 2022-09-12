@@ -1,0 +1,56 @@
+@import '../../styles/global/global';
+
+.ProgressBar {
+  position: relative;
+  box-shadow: 0 0 0 2px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 25px;
+}
+
+.bar {
+  border-radius: 4px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: $color-navy-500;
+  background-image: linear-gradient(
+    center bottom,
+    $color-navy-700 37%,
+    $color-navy-700 69%
+  );
+  overflow: hidden;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.1) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0.1) 75%,
+      transparent 75%,
+      transparent
+    );
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 1.2s linear infinite;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}

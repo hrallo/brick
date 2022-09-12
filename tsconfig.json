@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "react",
+    "declaration": true,
+    "declarationDir": "types",
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "emitDeclarationOnly": true
+  },
+  "exclude": ["node_modules", "templates", "*/**.stories.mdx"]
+}

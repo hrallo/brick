@@ -1,0 +1,30 @@
+@import '../../styles/global/global';
+
+.TypeaheadOptions {
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% - 1px);
+  max-height: 190px;
+  z-index: 1;
+}
+
+.option {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  text-align: left;
+  cursor: pointer;
+  min-height: 52px;
+  &:hover,
+  &:focus {
+    background-color: $color-monochrome-500;
+  }
+}
+
+.selected {
+  background-color: $color-monochrome-500;
+}
