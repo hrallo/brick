@@ -1,12 +1,12 @@
 {
-  "name": "@gloojs/paver",
-  "version": "0.3.9",
+  "name": "paver",
+  "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
-  "homepage": "http://TangoGroup.github.io/paver",
+  "homepage": "http://hrallo.github.io/paver",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TangoGroup/paver.git"
+    "url": "git+https://github.com/hrallo/paver.git"
   },
   "private": "true",
   "scripts": {

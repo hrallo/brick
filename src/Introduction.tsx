@@ -29,16 +29,7 @@ function Introduction() {
       style={containerStyles}
     >
       <h1 style={titleStyles}>Paver</h1>
-      <div style={textBlockStyles}>
-        Based on the{' '}
-        <a
-          href='https://www.figma.com/file/uEW0L1mGWkyLkyUw1hVYpp/NetX-Design-System'
-          target={'_blank'}
-        >
-          NetX Design System
-        </a>
-        .
-      </div>
+      <div style={textBlockStyles}>A react component library</div>
     </Layout>
   )
 }

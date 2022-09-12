@@ -37,7 +37,7 @@ for more information.
 ### `npm run deploy`
 
 This will build out the storybook documentation and deploy it to github pages.
-You can see the storybook app at https://tangogroup.github.io/paver/.
+You can see the storybook app at https://hrallo.github.io/paver/.
 
 ### `npm run build-storybook`
 
@@ -49,7 +49,9 @@ storybook and you are not running `npm run dev `
 
 - Go to Paver in Github and go to Releases
 - Select 'Draft a new Release'
-- Increment the release number by creating a new Tag in the 'Choose a Tag' dropdown
+- Increment the release number by creating a new Tag in the 'Choose a Tag'
+  dropdown
 - Select 'Auto-generate release notes'
 - Publish release
+
 ### ``
