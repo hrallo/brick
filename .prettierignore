@@ -1,6 +1,0 @@
-
-*.json
-.vscode
-node_modules
-*.d.ts 
-*.mdx
